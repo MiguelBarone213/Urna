@@ -1,0 +1,15 @@
+package AAA;
+import javax.swing.*;
+public class main {
+	public static void main(String[] args) {
+		int ELeitores=0; 
+		ELeitores =	Integer.parseInt(JOptionPane.showInputDialog("Quantos Eleitores"));
+		int Quant=0; 
+			Quant =	Integer.parseInt(JOptionPane.showInputDialog("Quantos Canditados"));
+		String Nomes[]= new String[Quant];
+		for(int i = 0; i < ELeitores; i++) {
+			Nomes[i]= JOptionPane.showInputDialog("Nome: "+i+"\nColoque os Nomes");
+		}
+		
+	}
+	}

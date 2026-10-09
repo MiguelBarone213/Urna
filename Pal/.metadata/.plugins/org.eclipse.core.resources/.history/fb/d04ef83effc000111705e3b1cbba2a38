@@ -1,0 +1,21 @@
+package AAA;
+import javax.swing.*;
+public class main {
+	public static void main(String[] args) {
+		String A ="";
+		int B=0;
+		B = Integer.parseInt(JOptionPane.showInputDialog("Quantas Letras Vai Ter a Palavra"));
+		String C[] = new String[B];
+		String D = "";
+	do {
+		for(int i=0; i<B; i++) {
+			C[i] = JOptionPane.showInputDialog("Letra:"+ i + "\nQuais As Letras");
+			A = A + C[i];
+		}
+		 String a[]= new String[B];
+			a[B] = JOptionPane.showInputDialog(null,"Da uma Letra pra acertar");
+ JOptionPane.showMessageDialog(null,""+ A);
+ D = JOptionPane.showInputDialog("Jogar novamente ?"+"\nSim"+ "\nNao");
+	}while(D.equals("Sim"));
+	}
+}
